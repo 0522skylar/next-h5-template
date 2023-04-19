@@ -1,5 +1,38 @@
-.warp {
+@charset "UTF-8";
+.wrap {
   width: 100%;
   height: 100%;
   background-color: pink;
+}
+
+/* 默认样式 */
+.h1 {
+  font-size: 24px;
+}
+
+/* 窗口小于或等于 600 像素 */
+@media only screen and (max-width: 600px) {
+  .h1 {
+    font-size: 16px;
+  }
+  .wrap {
+    width: 80%;
+  }
+}
+
+/* 窗口介于 600 像素到 1000 像素之间 */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+  .h1 {
+    font-size: 20px;
+  }
+  .wrap {
+    width: 56%;
+  }
+}
+
+/* 窗口大于 1000 像素 */
+@media only screen and (min-width: 1000px) {
+  .h1 {
+    font-size: 24px;
+  }
 }

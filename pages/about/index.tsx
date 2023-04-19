@@ -1,22 +1,22 @@
 import fetcher from '../../lib/request';
-
-function About(props) {
-  const { data } = props;
+import styles from './index.module.scss'
+function About() {
+  // const { data } = props;
 
   return (
-    <div>
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
+    <div className={styles.wrap}>
+      <h1 className={styles.h1}>about页面</h1>
+      <p>这是一个模板页面</p>
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const data = await fetcher('https://api.example.com/data');
-  console.log(data)
+  // const data = await fetcher('https://api.example.com/data');
+  // console.log(data)
   return {
     props: {
-      data,
+      data: 1234,
     },
   };
 }
