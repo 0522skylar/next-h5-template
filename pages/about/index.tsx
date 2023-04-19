@@ -1,4 +1,4 @@
-import fetcher from '../../lib/request';
+// import fetcher from '../../lib/request';
 import styles from './index.module.scss'
 function About() {
   // const { data } = props;
