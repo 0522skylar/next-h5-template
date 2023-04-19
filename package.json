@@ -9,7 +9,8 @@
     "lint": "next lint",
     "prepare": "husky install",
     "precommit": "lint-staged",
-    "commitlint": "commitlint --config .commitlint.config.js -e -V"
+    "commitlint": "commitlint --config .commitlint.config.js -e -V",
+    "lint-eslint": "eslint . --ext jsx,ts,tsx --max-warnings=0 --config .eslintrc.js --no-eslintrc"
   },
   "dependencies": {
     "@types/node": "18.15.11",
@@ -25,6 +26,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
     "@commitlint/config-conventional": "^17.6.1",
+    "editorconfig": "^1.0.2",
     "eslint": "^8.38.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.3",
