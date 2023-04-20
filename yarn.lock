@@ -2645,7 +2645,12 @@
   "resolved" "https://registry.npmmirror.com/pidtree/-/pidtree-0.6.0.tgz"
   "version" "0.6.0"
 
-"postcss@8.4.14":
+"postcss-pxtorem@^6.0.0":
+  "integrity" "sha512-ZRXrD7MLLjLk2RNGV6UA4f5Y7gy+a/j1EqjAfp9NdcNYVjUMvg5HTYduTjSkKBkRkfqbg/iKrjMO70V4g1LZeg=="
+  "resolved" "https://registry.npmmirror.com/postcss-pxtorem/-/postcss-pxtorem-6.0.0.tgz"
+  "version" "6.0.0"
+
+"postcss@^8.0.0", "postcss@8.4.14":
   "integrity" "sha512-E398TUmfAYFPBSdzgeieK2Y1+1cpdxJx8yXbK/m57nRhKSmk1GB2tO4lbLBtlkfPQTDKfe4Xqv1ASWPpayPEig=="
   "resolved" "https://registry.npmmirror.com/postcss/-/postcss-8.4.14.tgz"
   "version" "8.4.14"
