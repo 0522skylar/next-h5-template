@@ -5,7 +5,7 @@ import defaultImg from '@assets/modal/radish.png'
 import classNames from 'classnames'
 import type { CSSProperties } from 'react'
 import { useEffect, useState } from 'react'
-import ModalComponent from '../Modal'
+import ModalComponent from '../Mask'
 import styles from './index.module.scss'
 // logo img
 const logoImages: Record<string, string> = {
@@ -84,7 +84,7 @@ export default function MoliModel(props: IProps) {
       overLayStyle={overLayStyle}
     >
       <div className={styles.commonModal}>
-        {showLogo && <img className={styles.modalLogo} src={imgSrc} />}
+        {showLogo && <img className={styles.modalLogo} src={imgSrc.src} />}
         <div className={styles.modalTitle}>{title}</div>
         <div className={styles.modalBody}>{children}</div>
         {isShowOkBtn || showCancelBtn ? (

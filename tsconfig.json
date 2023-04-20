@@ -19,9 +19,40 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./",
     "paths": {
-      "@/*": ["./*"]
-    }
+      "@lib/*": [
+        "lib/*"
+      ],
+      "@components/*": [
+        "components/*"
+      ],
+      "@api/*": [
+        "api/*"
+      ],
+      "@assets/*": [
+        "assets/*"
+      ],
+      "@constants/*": [
+        "constants/*"
+      ],
+      "@helper/*": [
+        "helper/*",
+        "helper/*/index.ts"
+      ],
+      "@types/*": [
+        "typings/*"
+      ],
+      "@styles/*": [
+        "styles/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ],
+      "@enums/*": [
+        "enums/*"
+      ],
+    },
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/calcTextareaHeight.ts"],
   "exclude": ["node_modules"]
