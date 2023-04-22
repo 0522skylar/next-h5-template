@@ -2,9 +2,13 @@
 import { useState } from 'react'
 import styles from './index.module.scss'
 import Modal from '@components/Modal'
+import shanImg from'@assets/about/shan.jpg'
 function About() {
   // const { data } = props;
   const [showModal, setShowModal] = useState(false)
+  const [showModal2, setShowModal2] = useState(false)
+  const [showModal3, setShowModal3] = useState(false)
+  const [showModal4, setShowModal4] = useState(false)
 
   return (
     <div className={styles.wrapper}>
@@ -20,17 +24,40 @@ function About() {
         弹窗
       </button>
 
+
+      <button
+        className={styles.btn}
+        onClick={() => {
+          setShowModal2(true)
+        }}
+      >
+        弹窗2
+      </button>
+
+      <button
+        className={styles.btn}
+        onClick={() => {
+          setShowModal3(true)
+        }}
+      >
+        弹窗3
+      </button>
+
+      <button
+        className={styles.btn}
+        onClick={() => {
+          setShowModal4(true)
+        }}
+      >
+        弹窗4
+      </button>
       <Modal
         visible={showModal}
         onOk={() => setShowModal(false)}
-        title='标题'
+        title='小草力量：坚韧不拔的顽强之处'
         onCancel={() => setShowModal(false)}
       >
-        内容11111111111
-      </Modal>
-      <h3>小草力量：坚韧不拔的顽强之处</h3>
-
-      <div className={styles.content}>
+        <div className={styles.content}>
         <p>
           在世界上的每个角落，你都会看到一些植物，它们各有不同的形态和特征，但大部分植物都有一个共同点：它们都很坚强。然而，有一种被大多数人所忽视的植物却比其他植物更加坚韧，那就是小草。
         </p>
@@ -50,6 +77,44 @@ function About() {
           最后，小草教给我们的是一种信念，那就是只有顽强和坚强才能让我们取得成功，就像它百折不挠地生长在偏僻的角落一样，在任何情况下都要保持冷静、坚强而勇敢。就像小草一般，我们也应该在生命的道路上，保持着冷静的头脑、坚强的意志和勇敢的精神。这种力量不仅来自于自身，也可以发现和汲取自己身边的一切事物，与小草一样，让我们石破天惊，皆大欢喜。
         </p>
       </div>
+      </Modal>
+
+      <Modal
+        visible={showModal2}
+        onOk={() => setShowModal2(false)}
+        logoType={'award'}
+        title='提示类'
+        onCancel={() => setShowModal2(false)}
+      >
+        <div style={{fontSize: 15}}>你真的不要看弹窗了吗?</div>
+      </Modal>
+
+
+      <Modal
+        visible={showModal3}
+        isShowOkBtn={false}
+        showCancelBtn={false}
+        showBottomClose={true}
+        logoType={'cary'}
+        title='运营类'
+        onCancel={() => setShowModal3(false)}
+      >
+        <img src={shanImg.src} style={{width: '280px', height: '150px'}} />
+      </Modal>
+
+
+      <Modal
+        visible={showModal4}
+        showCancelBtn={false}
+        isShowAnimate={true}
+        showBottomClose={true}
+        logoType={'common'}
+        title='不同的logo+动画按钮'
+        sureText={'确定'}
+        onCancel={() => setShowModal4(false)}
+      >
+        <img src={shanImg.src} style={{width: '280px', height: '150px'}} />
+      </Modal>
     </div>
   )
 }
