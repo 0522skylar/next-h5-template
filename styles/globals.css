@@ -145,6 +145,7 @@ img {
 
 body {
   position: relative;
+  width: 100%;
   min-height: 100%;
   font-family: 'englishFont', '苹方', 'Heiti SC', Helvetica, 'Microsoft Yahei', Droid Sans, serif;
   -webkit-text-size-adjust: 100%;

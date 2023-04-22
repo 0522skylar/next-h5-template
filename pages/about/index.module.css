@@ -10,29 +10,38 @@
   font-size: 24px;
 }
 
+@media only screen and (min-width: 600px) {
+  .wrapper {
+    background: #f30;
+  }
+}
+
 /* 窗口小于或等于 600 像素 */
 @media only screen and (max-width: 600px) {
   .h1 {
-    font-size: 16px;
+    font-size: 36px;
   }
-  .wrap {
-    width: 80%;
+  .wrapper {
+    background: pink;
   }
 }
 
 /* 窗口介于 600 像素到 1000 像素之间 */
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
-  .wrap {
-    width: 56%;
+  .wrapper {
+    background: #ccc;
   }
 }
 
 /* 窗口大于 1000 像素 */
 @media only screen and (min-width: 1000px) {
   .h1 {
-    font-size: 24px;
+    font-size: 50px;
+  }
+  .wrapper {
+    background: #691221;
   }
 }

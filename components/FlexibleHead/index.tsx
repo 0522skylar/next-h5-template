@@ -6,11 +6,9 @@ export const APP_ZOOM = 1.3
 // 大屏幕适配阈值
 export const APP_THRESHOLD = 740
 
-
 export interface IFlexibleHeadProps {
   zoom?: number | string
 }
-
 
 export default function FlexibleHead({ zoom = APP_ZOOM }: IFlexibleHeadProps) {
   return (

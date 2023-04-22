@@ -1,37 +1,51 @@
-.wrap {
+.btn {
+  padding: 20px 40px;
+  background-color: $color-info-1;
+  border-radius: 40px;
+  margin-top: 50px;
+}
+.wrapper {
   width: 100%;
-  height: 100%;
-  background-color: pink;
+  height: 100vh;
+  text-align: center;
 }
 
-/* 默认样式 */
+.content {
+  text-align: left;
+  line-height: 40px;
+  font-size: 32px;
+}
+
 .h1 {
-  font-size: 24px;
+  padding-top: 50px;
 }
 
 /* 窗口小于或等于 600 像素 */
 @media only screen and (max-width: 600px) {
   .h1 {
-    font-size: 16px;
+    font-size: 36px;
   }
-  .wrap {
-    width: 80%;
+  .wrapper {
+    background: $color-bg;
   }
 }
 
 /* 窗口介于 600 像素到 1000 像素之间 */
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
   .h1 {
-    font-size: 20px;
+    font-size: 40px;
   }
-  .wrap {
-    width: 56%;
+  .wrapper {
+    background: $color-bg-fff;
   }
 }
 
 /* 窗口大于 1000 像素 */
 @media only screen and (min-width: 1000px) {
   .h1 {
-    font-size: 24px;
+    font-size: 50px;
+  }
+  .wrapper {
+    background:$color-line1;
   }
 }

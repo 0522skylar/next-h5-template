@@ -10,7 +10,8 @@
     "prepare": "husky install",
     "precommit": "lint-staged",
     "commitlint": "commitlint --config .commitlint.config.js -e -V",
-    "lint-eslint": "eslint . --ext jsx,ts,tsx --max-warnings=0 --config .eslintrc.js --no-eslintrc"
+    "lint-eslint": "eslint . --ext jsx,ts,tsx --max-warnings=0 --config .eslintrc.js --no-eslintrc",
+    "prettier": "prettier --config .prettierrc.js --write {**/*,*}.{js,ts,tsx}"
   },
   "dependencies": {
     "@types/node": "18.15.11",

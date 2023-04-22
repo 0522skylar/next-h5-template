@@ -8,14 +8,14 @@
  * @param {string} options.credentials 请求凭证模式（默认为 same-origin）
  */
 interface FetchOptions extends RequestInit {
-  headers?: HeadersInit;
+  headers?: HeadersInit
 }
 
 const fetcher = async (
   url: string,
-  options: FetchOptions = {},
+  options: FetchOptions = {}
 ): Promise<any> => {
-  const { headers, ...rest } = options;
+  const { headers, ...rest } = options
   const requestOptions: RequestInit = {
     headers: {
       Accept: 'application/json',
@@ -23,19 +23,18 @@ const fetcher = async (
       ...(headers ? headers : {}),
     },
     ...rest,
-  };
-
-  const response = await fetch(url, requestOptions);
-
-  if (!response.ok) {
-    const error = new Error(response.statusText || '请求失败');
-    error.message = JSON.stringify(response);
-    throw error;
   }
 
-  const data = await response.json();
-  return data;
-};
+  const response = await fetch(url, requestOptions)
 
-export default fetcher;
+  if (!response.ok) {
+    const error = new Error(response.statusText || '请求失败')
+    error.message = JSON.stringify(response)
+    throw error
+  }
 
+  const data = await response.json()
+  return data
+}
+
+export default fetcher

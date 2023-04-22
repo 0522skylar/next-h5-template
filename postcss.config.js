@@ -3,8 +3,8 @@ module.exports = {
     'postcss-pxtorem': {
       rootValue: 75,
       propList: ['*'],
-      mediaQuery: true,
+      mediaQuery: false,
       selectorBlackList: [],
     },
   },
-};
+}
