@@ -3,6 +3,8 @@ import { useState } from 'react'
 import styles from './index.module.scss'
 import Modal from '@components/Modal'
 import shanImg from'@assets/about/shan.jpg'
+import { Button } from 'antd-mobile'
+
 function About() {
   // const { data } = props;
   const [showModal, setShowModal] = useState(false)
@@ -14,7 +16,7 @@ function About() {
     <div className={styles.wrapper}>
       <h1 className={styles.h1}>about页面</h1>
       <p className={styles.h1}>这是使用next框架,快速构建的移动端模板</p>
-
+      <Button>点击</Button>
       <button
         className={styles.btn}
         onClick={() => {

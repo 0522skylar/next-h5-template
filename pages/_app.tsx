@@ -1,4 +1,6 @@
 import '../styles/globals.scss'
+import 'antd-mobile/2x/es/global'
+
 import FlexibleHead from '@components/FlexibleHead'
 import type { AppProps } from 'next/app'
 import Script from 'next/script'

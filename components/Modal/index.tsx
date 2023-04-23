@@ -9,10 +9,10 @@ import ModalComponent from '../Mask'
 import styles from './index.module.scss'
 // logo img
 const logoImages: Record<string, string> = {
-  default: defaultImg,
-  cary: caryImg,
-  award: guideImg,
-  common: commonImg,
+  default: defaultImg.src,
+  cary: caryImg.src,
+  award: guideImg.src,
+  common: commonImg.src,
 }
 interface IProps {
   visible: boolean // 是否显示弹窗
@@ -36,12 +36,12 @@ interface IProps {
   onCancel?: () => void
   children?: React.ReactNode
 }
-export default function MoliModel(props: IProps) {
+export default function Model(props: IProps) {
   const {
     title = '',
     visible = false,
     showLogo = true, // 是否显示logo
-    logoImg = defaultImg,
+    logoImg = defaultImg.src,
     logoType = 'default', // logo类型
     isShowOkBtn = true, // 是否展示确认按钮
     showCancelBtn = true, // 是否展示取消按钮
@@ -58,7 +58,7 @@ export default function MoliModel(props: IProps) {
     onCancel,
     onOk,
   } = props
-  const [imgSrc, setImgSrc] = useState(logoImg)
+  const [imgSrc, setImgSrc] = useState<string>(logoImg)
   useEffect(() => {
     setImgSrc(logoImg)
   }, [logoImg])
@@ -84,7 +84,7 @@ export default function MoliModel(props: IProps) {
       overLayStyle={overLayStyle}
     >
       <div className={styles.commonModal}>
-        {showLogo && <img className={styles.modalLogo} src={imgSrc.src} />}
+        {showLogo && <img className={styles.modalLogo} src={imgSrc} />}
         <div className={styles.modalTitle}>{title}</div>
         <div className={styles.modalBody}>{children}</div>
         {isShowOkBtn || showCancelBtn ? (

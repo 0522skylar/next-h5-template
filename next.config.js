@@ -12,6 +12,8 @@ const nextConfig = {
       path.join(__dirname, 'pages'),
     ],
   },
+  // 转译node_modules的依赖以兼容低端机的语法
+  transpilePackages: ['ahooks', 'antd-mobile']
 }
 
 module.exports = nextConfig

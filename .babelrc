@@ -1,0 +1,14 @@
+{
+  "presets": [
+    ["next/babel", {
+      "preset-env": {
+        "targets": {
+          "ios": "9"
+        }
+      }
+    }]
+  ],
+  "plugins": [
+    ["import", { "libraryName": "antd-mobile", "libraryDirectory": "2x/es/components", "style": false}]
+  ]
+}

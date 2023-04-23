@@ -1,9 +1,9 @@
 import Head from 'next/head'
 // import Image from 'next/image'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
 import styles from './Home.module.css'
 
-const inter = Inter({ subsets: ['latin'] })
+// const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <main className={styles.main}>
         <h3 className={styles.title}>基于next搭建一个适用于移动端的h5模板</h3>
         <div className={styles.desc}>使用到的库如下: </div>
-        <ul className={inter.className}>
+        <ul className={styles.inter}>
           <li className={styles.liItem}>1.eslint</li>
           <li className={styles.liItem}>2.prettier</li>
           <li className={styles.liItem}>3.husky</li>
