@@ -14,7 +14,11 @@
 .desc {
   font-size: 36px;
 }
+.inter {
+  width: 100%;
+}
 .liItem {
   padding-top: 24px;
   font-size: 32px;
+  text-align: left;
 }
