@@ -17,42 +17,50 @@ function About() {
       <h1 className={styles.h1}>about页面</h1>
       <p className={styles.h1}>这是使用next框架,快速构建的移动端模板</p>
       <Button>点击</Button>
-      <button
-        className={styles.btn}
-        onClick={() => {
-          setShowModal(true)
-        }}
-      >
-        弹窗
-      </button>
+      <div>
+        <button
+          className={styles.btn}
+          onClick={() => {
+            setShowModal(true)
+          }}
+        >
+          弹窗
+        </button>
+      </div>
 
 
-      <button
-        className={styles.btn}
-        onClick={() => {
-          setShowModal2(true)
-        }}
-      >
-        弹窗2
-      </button>
+      <div>
+        <button
+          className={styles.btn}
+          onClick={() => {
+            setShowModal2(true)
+          }}
+        >
+          弹窗2
+        </button>
+      </div>
 
-      <button
-        className={styles.btn}
-        onClick={() => {
-          setShowModal3(true)
-        }}
-      >
-        弹窗3
-      </button>
+      <div>
+        <button
+          className={styles.btn}
+          onClick={() => {
+            setShowModal3(true)
+          }}
+        >
+          弹窗3
+        </button>
+      </div>
 
-      <button
-        className={styles.btn}
-        onClick={() => {
-          setShowModal4(true)
-        }}
-      >
-        弹窗4
-      </button>
+      <div>
+        <button
+          className={styles.btn}
+          onClick={() => {
+            setShowModal4(true)
+          }}
+        >
+          弹窗4
+        </button>
+      </div>
       <Modal
         visible={showModal}
         onOk={() => setShowModal(false)}

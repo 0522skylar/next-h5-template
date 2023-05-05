@@ -176,16 +176,3 @@ button {
   border: none;
   outline: none;
 }
-
-.overflow-hidden {
-  overflow: hidden !important;
-}
-
-.adm-mask {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.adm-picker-popup .adm-popup-body {
-  border-top-left-radius: 32px !important;
-  border-top-right-radius: 32px !important;
-}
