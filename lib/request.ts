@@ -10,7 +10,6 @@
 interface FetchOptions extends RequestInit {
   headers?: HeadersInit
 }
-
 const fetcher = async (
   url: string,
   options: FetchOptions = {}

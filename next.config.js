@@ -1,8 +1,12 @@
 const path = require('path')
+const env = require("./env")
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  env: {
+    ...env[process.env.MODE],
+  },
   sassOptions: {
     prependData: `
     @import "@styles/color.scss";

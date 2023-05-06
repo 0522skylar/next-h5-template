@@ -4,6 +4,7 @@ import styles from './index.module.scss'
 import Modal from '@components/Modal'
 import shanImg from'@assets/about/shan.jpg'
 import { Button } from 'antd-mobile'
+import { apiTest, apiSelf } from 'apis/test'
 
 function About() {
   // const { data } = props;
@@ -12,11 +13,22 @@ function About() {
   const [showModal3, setShowModal3] = useState(false)
   const [showModal4, setShowModal4] = useState(false)
 
+  const handleExternalApi = async () => {
+    const res = await apiTest();
+    console.log(res)
+  }
+
+  const handleSelfAPi = async () => {
+    const res = await apiSelf();
+    console.log(res)
+  }
+
   return (
     <div className={styles.wrapper}>
       <h1 className={styles.h1}>about页面</h1>
       <p className={styles.h1}>这是使用next框架,快速构建的移动端模板</p>
-      <Button>点击</Button>
+      <Button onClick={handleExternalApi}>调用外部接口</Button>
+      <Button onClick={handleSelfAPi}>调用自身的接口</Button>
       <div>
         <button
           className={styles.btn}
