@@ -8,9 +8,9 @@ module.exports = {
   // 在语句末尾添加分号，默认是 true
   semi: false,
   // 使用单引号，默认是 false
-  singleQuote: true,
+  singleQuote: false,
   // JSX中使用单引号，默认是 false
-  jsxSingleQuote: true,
+  jsxSingleQuote: false,
   // jsx 标签的反尖括号需要换行
   jsxBracketSameLine: false,
   // 是否保留对象内侧两端的空格，比如 { foo: bar } 和 {foo:bar} 的区别
