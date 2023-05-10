@@ -13,7 +13,7 @@ export interface IModalProps {
   overLayStyle?: CSSProperties // 弹窗蒙层样式
 }
 
-export const ModalComponent = React.memo((props: IModalProps) => {
+export default function ModalComponent(props: IModalProps) {
   const {
     maskClick,
     visible = false,
@@ -43,6 +43,6 @@ export const ModalComponent = React.memo((props: IModalProps) => {
   ) : (
     <></>
   )
-})
+}
 
-export default ModalComponent
+// export default ModalComponent
